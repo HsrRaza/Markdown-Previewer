@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#right-side{
+    border: 2px solid black;
+}
+
+.side{
+    height: 500px;
+    width: 500px;
+    /* border: 2px solid grey; */
+    margin: 20px;
+
+}
+textarea{
+
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    outline: none;
+    resize: none;
+
+    padding: 10px;
+    
+    
+}
+
+textarea::focus{
+    outline: none;
+}
