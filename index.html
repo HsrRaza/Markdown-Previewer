@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marked Down</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>marked Down Preview</h1>
- <div id="container">
-     <div class="side" id="left-side">
-        <textarea name="" id="textarea" rows="1" cols="50" wrap="physical"></textarea>
-     </div>
-     <div class="side" id="right-side"></div>
+    <h1>Markdown Previewer</h1>
+    <div class="btn-container">
 
- </div>
+        <button class="copy">Copy </button>
+        <button class="reset">Reset</button>
+    </div>
+    <div id="container">
+
+        <div class="left-side" >
+            <textarea name="text" id="textarea"></textarea>
+        </div>
+
+
+        <div class="right-side" >
+            <div id="preview">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
