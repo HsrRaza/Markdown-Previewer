@@ -26,7 +26,7 @@ button{
     color: aliceblue;
     cursor: pointer;
 }
-.reset{
+#reset{
     background-color:#FF5252 ;
 }
 .btn-container{
@@ -46,6 +46,7 @@ button{
     height: calc(100vh - 150px);
     gap: 20px;
     margin-top: 10px;
+    color:  #E0E0E0;
    
 }
 
@@ -53,6 +54,7 @@ button{
   width: 40%;
   height: 70vh;
   display: flex;
+  color:  #E0E0E0;
 
 }
 
@@ -80,6 +82,7 @@ textarea{
     padding: 20px;
     font-size: 15px;
     background-color: #1E1E1E;
+    color:  #E0E0E0;
     
     
 }
