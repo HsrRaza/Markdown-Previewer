@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const output = document.getElementById('preview');
     const copyBtn = document.getElementById('copy')
     const resetBtn = document.getElementById('reset')
+    const notifyMsg = document.getElementById('notify-Msg')
 
 
     // to check whether marke.js loaded or not
@@ -32,12 +33,23 @@ document.addEventListener('DOMContentLoaded', function () {
     resetBtn.addEventListener('click', deleteInput)
 
 
-    function copyToClipBoard(){
+    function copyToClipBoard() {
         const inputValue = input.value;
-        navigator.clipboard.writeText(inputValue).then( ()=>{
-            
+        navigator.clipboard.writeText(inputValue).then(() => {
+            notifyMsg.style.visibility = 'visible'
+            notifyMsg.style.opacity = '1'
+
+            setTimeout(() => {
+                notifyMsg.style.opacity = '0'
+                notifyMsg.style.visibility = 'hidden'
+            }, 1500)
+        }).catch(err => {
+            console.error("failed to copy text :", err);
+
         })
     }
+
+    copyBtn.addEventListener('click', copyToClipBoard)
 
 
 
