@@ -18,3 +18,9 @@
 <li>Reset Button</li>
 </ul><h2>Screenshots</h2>
 <hr><p><img src="https://github.com/HsrRaza/Markdown-Previewer/blob/main/Screenshot%20from%202025-03-28%2016-18-12.png" alt=""></p>
+
+
+<ul><h2>Deployment</h2>
+<li>
+<a href="https://markedown-preview.netlify.app/" target="_blank">View deployment</a>
+</li> </ul>
